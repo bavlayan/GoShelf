@@ -10,7 +10,8 @@ GoToDo is personal library app that is developed for learning golang.
 
 
 ## Tips for Golang
-* 
+* When you designing an API with endpoints in Go, using `http.ServeMux` can be a bit difficult. It doesn't have handlesrs based on HTTP methods (GET, POST, PUT etc.)
+* When you are desigining a Rest API, `httprouter` is a solid choice.
 
 ### References
 
