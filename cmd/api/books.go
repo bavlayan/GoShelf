@@ -41,7 +41,7 @@ func (app *application) showBookHandler(w http.ResponseWriter, r *http.Request) 
 		},
 	}
 
-	err = app.writeJSON(w, http.StatusOK, books, nil)
+	err = app.writeJSON(w, http.StatusOK, envelope{"books": books}, nil)
 	if err != nil {
 		app.logger.Println(err)
 		http.Error(w, "The server encountered a problem..", http.StatusInternalServerError)
